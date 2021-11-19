@@ -1,4 +1,4 @@
-import { HTTPError, HTTPErrorKind } from "@chobe/utils";
+import { HTTPError, HTTPErrorKind } from "../src";
 
 describe("HTTPError tests", function () {
   test("creation", () => {

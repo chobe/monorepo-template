@@ -1,4 +1,4 @@
-import { HTTPError, stringifyError } from "@chobe/utils";
+import { HTTPError, stringifyError } from "../src";
 
 describe("Error tests", function () {
   test("stringifyError", () => {

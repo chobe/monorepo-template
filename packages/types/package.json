@@ -7,10 +7,17 @@
     "access": "public"
   },
   "scripts": {
-    "lint": "eslint src --ext js,ts",
+    "lint": "scripty",
     "clean": "rimraf dist *.tsbuildinfo",
-    "build": "tsc -b .",
-    "test": "jest"
+    "build": "scripty",
+    "test": "scripty"
+  },
+  "scripty": {
+    "path": "../../scripts/packages"
+  },
+  "volta": {
+    "node": "16.13.0",
+    "yarn": "1.22.17"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.4",

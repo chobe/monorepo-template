@@ -14,23 +14,23 @@ export type RejectHandler = (reason: unknown) => void;
  * @public
  */
 class Deferred<T> {
-  #_promise: Promise<T>;
-  #_resolve!: ResolveHandler<T>;
-  #_reject!: RejectHandler;
+  __promise: Promise<T>;
+  __resolve!: ResolveHandler<T>;
+  __reject!: RejectHandler;
   constructor() {
-    this.#_promise = new Promise((resolve, reject) => {
-      this.#_resolve = resolve;
-      this.#_reject = reject;
+    this.__promise = new Promise((resolve, reject) => {
+      this.__resolve = resolve;
+      this.__reject = reject;
     });
   }
   get promise(): Promise<T> {
-    return this.#_promise;
+    return this.__promise;
   }
   get resolve(): ResolveHandler<T> {
-    return this.#_resolve;
+    return this.__resolve;
   }
   get reject(): RejectHandler {
-    return this.#_reject;
+    return this.__reject;
   }
 }
 export default Deferred;

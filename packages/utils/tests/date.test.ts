@@ -1,4 +1,4 @@
-import { formatTimestamp } from "@chobe/utils";
+import { formatTimestamp } from "../src";
 
 describe("formatTimestamp() tests", function () {
   test("01-01-2020", () => {

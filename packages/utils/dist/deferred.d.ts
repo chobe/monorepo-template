@@ -13,7 +13,9 @@ export declare type RejectHandler = (reason: unknown) => void;
  * @public
  */
 declare class Deferred<T> {
-    #private;
+    __promise: Promise<T>;
+    __resolve: ResolveHandler<T>;
+    __reject: RejectHandler;
     constructor();
     get promise(): Promise<T>;
     get resolve(): ResolveHandler<T>;

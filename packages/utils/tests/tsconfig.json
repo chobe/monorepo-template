@@ -1,5 +1,4 @@
 {
-  "references": [{ "path": "..", "name": "@chobe/utils" }],
   "compilerOptions": {
     "lib": ["DOM", "ES2021"],
     "types": ["jest"],

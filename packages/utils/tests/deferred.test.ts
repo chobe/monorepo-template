@@ -1,4 +1,4 @@
-import { Deferred } from "@chobe/utils";
+import { Deferred } from "../src";
 
 describe("Deferred tests", function () {
   test("Constructor does not error", () => {
