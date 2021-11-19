@@ -1,7 +1,7 @@
 {
   "references": [{ "path": "..", "name": "@chobe/types" }],
   "compilerOptions": {
-    "lib": ["DOM", "ES2018"],
+    "lib": ["DOM", "ES2021"],
     "types": ["jest"],
     "baseUrl": "..",
     "noEmit": true

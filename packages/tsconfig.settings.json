@@ -1,13 +1,7 @@
 {
+  "extends": "../tsconfig.json",
   "compilerOptions": {
-    "module": "CommonJS",
     "types": [],
-    "sourceMap": true,
-    "target": "ES2021",
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "declaration": true
+    "sourceMap": true
   }
 }
