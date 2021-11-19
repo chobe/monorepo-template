@@ -17,7 +17,8 @@
     "test": "scripty",
     "lint": "scripty",
     "clean": "scripty",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "release": "lerna version --conventional-commits"
   },
   "scripty": {
     "path": "./scripts/workspace"
