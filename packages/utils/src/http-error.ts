@@ -33,9 +33,9 @@ function determineKind(status: number): HTTPErrorKind {
 export default class HTTPError extends Error {
   kind: HTTPErrorKind;
 
-  constructor(info: { statusText: string; status: number }, message: string) {
+  constructor(info: {statusText: string; status: number}, message: string) {
     super(
-      `HTTPError [status: ${info.statusText} (${info.status})]\n${message}`
+      `HTTPError [status: ${info.statusText} (${info.status})]\n${message}`,
     );
     this.kind = determineKind(info.status);
   }

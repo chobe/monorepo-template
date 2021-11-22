@@ -16,6 +16,7 @@
     "test": "scripty",
     "lint": "scripty",
     "clean": "scripty",
+    "format": "scripty",
     "prepare": "husky install",
     "release": "lerna version --conventional-commits",
     "publish": "lerna version --conventional-commits"
@@ -31,10 +32,12 @@
     "@typescript-eslint/parser": "^5.4.0",
     "commitlint": "^15.0.0",
     "eslint": "^8.2.0",
+    "husky": "^7.0.0",
     "lerna": "^4.0.0",
     "lerna-changelog": "^2.2.0",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.4.1",
     "rimraf": "^3.0.2",
-    "scripty": "^2.0.0",
-    "husky": "^7.0.0"
+    "scripty": "^2.0.0"
   }
 }

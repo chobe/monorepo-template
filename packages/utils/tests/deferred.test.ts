@@ -1,14 +1,14 @@
-import { Deferred } from "../src";
+import {Deferred} from '../src';
 
-describe("Deferred tests", function () {
-  test("Constructor does not error", () => {
+describe('Deferred tests', function () {
+  test('Constructor does not error', () => {
     const d = new Deferred<number>();
     expect(d).toBeTruthy();
-    expect(typeof d.resolve).toBe("function");
-    expect(typeof d.reject).toBe("function");
+    expect(typeof d.resolve).toBe('function');
+    expect(typeof d.reject).toBe('function');
     expect(d.promise).toBeInstanceOf(Promise);
   });
-  test("promise resolves when Deferred#resolve() is called", async () => {
+  test('promise resolves when Deferred#resolve() is called', async () => {
     expect.assertions(2);
     const d = new Deferred<number>();
     setTimeout(() => {
@@ -18,7 +18,7 @@ describe("Deferred tests", function () {
     const val = await d.promise;
     expect(val).toBe(42);
   });
-  test("promise rejects when Deferred#reject() is called", async () => {
+  test('promise rejects when Deferred#reject() is called', async () => {
     expect.assertions(3);
     const d = new Deferred<number>();
     setTimeout(() => {

@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import Deferred from "./deferred";
+import {useEffect} from 'react';
+import Deferred from './deferred';
 
 /**
  *
@@ -12,10 +12,10 @@ export function useAsyncDataEffect<T>(
     stateName: string;
     otherStatesToMonitor?: unknown[];
     setter: (arg: T) => void;
-  }
+  },
 ): void {
   let cancelled = false;
-  const { setter, stateName } = options;
+  const {setter, stateName} = options;
   useEffect(() => {
     const d = new Deferred<T>();
 
@@ -30,8 +30,8 @@ export function useAsyncDataEffect<T>(
       .then((data) => {
         if (!cancelled) {
           console.info(
-            "%c Updating state: " + stateName,
-            "background: green; color: white; display: block;"
+            '%c Updating state: ' + stateName,
+            'background: green; color: white; display: block;',
           );
           setter(data);
         }
