@@ -19,7 +19,7 @@
     "format": "scripty",
     "prepare": "husky install",
     "release": "lerna version --conventional-commits",
-    "publish": "lerna version --conventional-commits"
+    "pub": "lerna publish --conventional-commits"
   },
   "scripty": {
     "path": "./scripts/workspace"
