@@ -17,7 +17,8 @@
     "lint": "scripty",
     "clean": "scripty",
     "prepare": "husky install",
-    "release": "lerna version --conventional-commits"
+    "release": "lerna version --conventional-commits",
+    "publish": "lerna version --conventional-commits"
   },
   "scripty": {
     "path": "./scripts/workspace"
