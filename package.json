@@ -2,7 +2,6 @@
   "name": "monorepo-template",
   "description": "Template to create a monorepo",
   "author": "chobe <soy_chobe@yahoo.com>",
-  "license": "BSD-2-Clause",
   "private": true,
   "workspaces": [
     "packages/*"
